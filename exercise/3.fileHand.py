@@ -1,0 +1,11 @@
+""" Q1. Write a Python script to read a file and print its contents. """
+""" Q2. Create a file and write your name into it. """
+""" Q3. Handle a ZeroDivisionError using try-except. """
+""" Q4. Write a program to handle file not found error. """
+""" Q5. Create a module with a function and import it in another file. """
+""" Q6. Use a list comprehension to filter even numbers from a list. """
+""" Q7. Write a generator that yields even numbers up to N. """
+""" Q8. Create a program to count lines and words in a file. """
+
+""" Q9. Write a program to read a CSV file and print its contents. """
+""" Q10. Handle multiple exceptions in a single try block. """
