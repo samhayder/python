@@ -7,7 +7,18 @@
 Problem:You have an N-element tuple or sequence that you would like to unpack into a collection of N variables.
 
 ```Python
+element = (2,4)
+x,y = element
+print(element)
+print(x)
+print(y)
 
+details = ('Samsuddin',35,'Mirpur','Job')
+name,age,address,desc = details
+print(name)
+print(age)
+print(address)
+print(desc)
 ```
 
 </details>
@@ -19,7 +30,11 @@ Problem:You have an N-element tuple or sequence that you would like to unpack in
 Problem: You need to unpack N elements from an iterable, but the iterable may be longer than N elements, causing a “too many values to unpack” exception.
 
 ```Python
-
+records = ('Samsuddin',32, '01684711032','01732005860')
+name,age,*mobile = records
+print(name)
+print(age)
+print(*mobile)
 ```
 
 </details>
@@ -44,7 +59,19 @@ some other kind of processing.
 Problem: You want to make a list of the largest or smallest N items in a collection
 
 ```Python
+def find_large_small(arr):
+    largest_number = arr[0]
+    smallest_number = arr[0]
 
+    for i in range(len(arr)):
+        if largest_number < arr[i]:
+            largest_number = arr[i]
+        elif smallest_number > arr[i]:
+            smallest_number = arr[i]
+    return f"Largest Number- {largest_number}, Smallest Number- {smallest_number}"
+
+print(find_large_small([23,5,17,65,40])) #L=65, S=5
+print(find_large_small([-12,-5,-69,-2])) #L=-2, S=-69
 ```
 
 </details>
@@ -57,7 +84,17 @@ Problem: You want to implement a queue that sorts items by a given priority and 
 the item with the highest priority on each pop operation.
 
 ```Python
+def priority_queue(arr):
+    arr_len = len(arr)
+    for i in range(arr_len):
+        for j in range(0,arr_len-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1],arr[j] #swap data
+    return arr
 
+list_1 = priority_queue([4,3,5,8,1,9,15,2])
+print(list_1.pop()) #15
+print(list_1.pop()) #9
 ```
 
 </details>
@@ -70,7 +107,11 @@ Problem: You want to make a dictionary that maps keys to more than one value (a 
 “multidict”).
 
 ```Python
-
+disc = {
+    '1':[1,2,3,4],
+    '2':[5,4,3,2]
+}
+print(disc) #{'1': [1, 2, 3, 4], '2': [5, 4, 3, 2]}
 ```
 
 </details>
@@ -83,7 +124,15 @@ Problem: You want to create a dictionary, and you also want to control the order
 iterating or serializing.
 
 ```Python
+disc = {}
+disc['one'] = "1"
+disc['two'] = "2"
+disc['three'] = "3"
+disc['four'] = "4"
+disc['five'] = "5"
 
+for key in disc:
+    print(key, disc[key])
 ```
 
 </details>
@@ -96,7 +145,16 @@ Problem: You want to perform various calculations (e.g., minimum value, maximum 
 ing, etc.) on a dictionary of data.
 
 ```Python
+phone_prices = {
+    'Apple':19500,
+    'Samsung':65874,
+    'Opp':215,
+    'Walton':2548
+}
 
+min_prices = min(zip(phone_prices.values(),phone_prices.keys())) #(65874, 'Samsung')
+max_prices = max(zip(phone_prices.values(),phone_prices.keys())) #(215, 'Opp')
+sort_prices = sorted(zip(phone_prices.values(),phone_prices.keys())) #[(215, 'Opp'), (2548, 'Walton'), (19500, 'Apple'), (65874, 'Samsung')]
 ```
 
 </details>
