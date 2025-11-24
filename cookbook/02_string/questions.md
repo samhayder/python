@@ -8,7 +8,14 @@ Problem: You need to split a string into fields, but the delimiters (and spacing
 consistent throughout the string.
 
 ```python
+str = 'samsuddin hayder'
+str_split = str.split(' ')
+print(str_split) #['samsuddin', 'hayder']
 
+note = "helo, i am the boss; oh no sorry! you'r the boss."
+import re
+note_split = re.split(r'[,;\s]\s*',note)
+print(note_split) #['helo', 'i', 'am', 'the', 'boss', 'oh', 'no', 'sorry!', "you'r", 'the', 'boss.']
 ```
 
 </details>
@@ -21,7 +28,17 @@ Problem: You need to check the start or end of a string for specific text patter
 extensions, URL schemes, and so on.
 
 ```python
+url = "https://www.youtube.com"
 
+if url.startswith('https://'):
+    print('Start pattern is match')
+else:
+    print('please type of start right pattern')
+
+if url.endswith('.com'):
+    print('End pattern is match')
+else:
+    print('please type of end right pattern')
 ```
 
 </details>
