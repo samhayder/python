@@ -12,6 +12,7 @@ def main():
         
         user_input = input("Yes or No ").strip().lower()
         if user_input == "no":
+            print("\n Exit the program successful.")
             break
         
         
