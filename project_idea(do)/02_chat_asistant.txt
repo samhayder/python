@@ -1,0 +1,99 @@
+Project 2 – AI Study Buddy (Rule-Based Chat
+Assistant in Python)
+
+Objective
+To create a conversational AI assistant using Python’s core logic - string
+matching, functions, dictionaries, and loops.
+
+Concepts Used
+
+Concept Purpose
+
+Strings To analyze and compare user input
+
+Conditionals
+(if-elif-else)
+
+To decide chatbot responses
+
+Dictionaries To store questions and responses
+
+Functions To organize chatbot logic
+
+Loops To keep the chat running
+
+User Input
+(input())
+
+To take input from the user
+
+Description
+
+In this project, we will build a mini AI chatbot that can interact with users.
+The chatbot will understand simple messages like “hello,” “motivate me,” or
+“python” and respond with friendly, intelligent answers.
+This is a rule-based chatbot, it doesn’t use real AI models yet, but it behaves
+intelligently using Python logic.
+
+Sample Output
+🤖 Hello! I am Saumya’s Study Buddy!
+You can talk to me. Type 'bye' anytime to exit.
+
+You: Hello
+Bot: Hi there! How can I help you today?
+
+You: Who are you?
+Bot: I’m your friendly AI Study Buddy created by Saumya Singh.
+
+You: Motivate me
+Bot: Keep going! Every bug you fix makes you a better coder 💪
+
+You: Tell me about Python
+Bot: Python is powerful — it can do AI, automation, and much more!
+
+You: Bye
+Bot: Goodbye! Keep learning and keep smiling 😊
+
+Features
+● Responds to simple user inputs
+● Works continuously until the user types bye
+● Easy to customize with new keywords and responses
+● Demonstrates real-world chatbot logic using Python fundamentals
+
+Future Scope
+
+1. Add time-based greetings (using datetime module)
+2. Add text-to-speech (using pyttsx3)
+3. Add voice input (using speech_recognition)
+4. Connect to an AI API for real answers (like OpenAI / Hugging Face)
+5. Store chat history in a file using File Handling
+
+📜 Showcase as Minor Project
+Project Title: AI Study Buddy – Rule-Based Chat Assistant in Python
+
+Objective: To create a conversational assistant using Python’s core logic -
+string matching, functions, dictionaries, and loops.
+Key Features:
+● Keyword-based intent recognition
+● Dynamic responses using dictionaries
+● Modular function design
+● Expandable to API-based real AI
+
+Future Scope:
+Integration with NLP APIs, Text-to-Speech, and Voice Recognition for full AI
+assistant behavior.
+
+Showcase in Resume / LinkedIn / Portfolio
+AI Study Buddy – Rule-Based Chat Assistant
+Designed a smart chatbot using Python fundamentals (loops, conditionals,
+and dictionaries). Implemented a keyword-matching logic to make it
+behave like a real AI assistant and built modular functions for reusability.
+(Future Plan: connect to OpenAI API for real AI responses.)
+
+Practice Tasks
+1. Add at least 3 new questions and responses to the chatbot.
+2. Add logic to respond differently if the user says “sad” or “happy.”
+3. Add a delay (1 second) between question and answer using
+time.sleep().
+
+LINK: https://drive.google.com/file/d/1b-WAQbJLYOeWzlpWU15tJuqpbhUWn0XS/view
