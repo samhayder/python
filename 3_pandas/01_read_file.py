@@ -9,9 +9,9 @@ excel_file = pandas.read_excel("3_pandas/file/SampleSuperstore.xlsx")
 # read data from JSON file into a dataframe 
 json_file = pandas.read_json("3_pandas/file/sample_Data.json")
 
-# print(csv_file)
+print(csv_file['ORDERNUMBER'][0])
 # print(excel_file)
-print(json_file)
+# print(json_file)
 
 
 # link = https://www.youtube.com/watch?v=0T9qhK5wBqI
