@@ -1,7 +1,6 @@
 import tkinter
 import pandas
 import random
-import time
 
 # ----- Constant Variable ---- #
 BACKGROUND_COLOR = "#98A8A0"
