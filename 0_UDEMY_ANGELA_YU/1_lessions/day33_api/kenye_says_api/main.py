@@ -9,7 +9,7 @@ def get_quote():
     
     data = response.json()
     quote = data['quote']
-    canvas.itemconfig(quote_text, text=f"{quote}")
+    canvas.itemconfig(quote_text, text=quote)
 
 
 display = tkinter.Tk()
@@ -20,7 +20,7 @@ display.config(padx=50,pady=50)
 canvas = tkinter.Canvas(width=300, height=414, highlightthickness=0)
 bg_img = tkinter.PhotoImage(file="0_UDEMY_ANGELA_YU/1_lessions/day33_api/kenye_says_api/img/background.png")
 create_bg_img = canvas.create_image(150,206,image=bg_img)
-quote_text = canvas.create_text(150,207, text="", fill="#fff", font=('Arial',16,'bold'), width=250)
+quote_text = canvas.create_text(150,207, text="I'd like to meet with Tim Cook. I got some ideas", fill="#fff", font=('Arial',16,'bold'), width=250)
 canvas.grid(row=0,column=0)
 
 # Button
